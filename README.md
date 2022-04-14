@@ -24,25 +24,25 @@ $ yarn start
 
 こんな画面が表示されるので
 
-![画面](./images/kvs_react_app_1.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390802-24caee03-f31b-4cfd-b17c-de49b7e2a264.png)
 
 もしまだシグナリングチャンネルが無いようなら適当な名前で作成してください。  
 (アカウント内で一意である必要があります)
-![画面](./images/kvs_react_app_2.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390817-fd490a5e-3444-4765-89ea-5aa591b7581c.png)
 
 シグナリングチャンネル、っていうのは「Kinesis Video Streams」のリソースです。  
 AWSのマネコンだとこんな感じです。  
-![画面](./images/kvs_react_app_3.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390841-3d3e4e4d-b3c8-456c-8bf6-f7655b1e3a99.png)
 
 シグナリングチャンネルが作成できているようなら、チャンネル名を指定して「Master」としてブラウザのWebカメラの動画を送信開始します。
-![画面](./images/kvs_react_app_4.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390857-93b8ad98-4638-4b8b-ba5b-ec7ddb4c87f4.png)
 
 送信されている動画はAWSのマネコンからも確認できます。
-![画面](./images/kvs_react_app_5.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390869-784c438c-4aac-4d28-a51c-65b38a2e1412.png)
 
 AWSのマネコンからMasterとして参加し、ローカルからはViewerとして参加することもできます。  
 (どちらも同一のPCで一人でやったので同じ画像ですが...)
-![画面](./images/kvs_react_app_6.png)
+![画面](https://user-images.githubusercontent.com/43127868/163390898-3a7fbaeb-c6c5-43aa-b618-d606538c5c1c.png)
 
 
 ## 参考
