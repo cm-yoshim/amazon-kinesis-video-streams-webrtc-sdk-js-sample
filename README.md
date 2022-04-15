@@ -45,7 +45,15 @@ AWSのマネコンからMasterとして参加し、ローカルからはViewer�
 ![画面](https://user-images.githubusercontent.com/43127868/163390898-3a7fbaeb-c6c5-43aa-b618-d606538c5c1c.png)
 
 
+## 仕組みについて
+Kinesis Video Streams、WebRTCの仕組みについて学びたい場合は以下ページがとても参考になる。  
+このページを一度読んでおくと、本スクリプトの中で実行している内容についても理解が深まるので是非一度ご確認いただきたい。
+
+- [Kinesis Video Streams with WebRTC: How It Works](https://docs.aws.amazon.com/ja_jp/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-how-it-works.html
+)
+
 ## 参考
 
 - [amazon-kinesis-video-streams-webrtc-sdk-js](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js)
 - [mganeko/kvs_webrtc_example](https://github.com/mganeko/kvs_webrtc_example)
+- [Kinesis Video Streams with WebRTC: How It Works](https://docs.aws.amazon.com/ja_jp/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-how-it-works.html)

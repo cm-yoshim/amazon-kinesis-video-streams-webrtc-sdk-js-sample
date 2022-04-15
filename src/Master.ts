@@ -27,7 +27,6 @@ const kinesisVideoClientConfig: KinesisVideoClientConfig = {
 };
 const kinesisVideoClient = new KinesisVideoClient(kinesisVideoClientConfig);
 
-// TODO: 型を指定
 const master = {
     signalingClient: null as any,
     peerConnectionByClientId: {} as any,
@@ -81,7 +80,6 @@ export const startMaster = async (params: StartMasterInput) => {
 
     const endpointsByProtocol: { [key: string] : string } = getSignalingChannelEndpointResponse.ResourceEndpointList.reduce((endpoints, endpoint) => {
         // @ts-ignore
-        // TODO: ↑チェック
         endpoints[endpoint.Protocol] = endpoint.ResourceEndpoint;
         return endpoints;    
     }, {});
@@ -236,9 +234,7 @@ export const startMaster = async (params: StartMasterInput) => {
         console.log('[MASTER] Generating ICE candidates for client: ' + remoteClientId);
     });
 
-    // TODO: 「candidate」変数、「remoteClientId」変数の型定義
-    // @ts-ignore
-    master.signalingClient.on('iceCandidate', async (candidate, remoteClientId) => {
+    master.signalingClient.on('iceCandidate', async (candidate: string, remoteClientId: string) => {
         console.log('[MASTER] Received ICE candidate from client: ' + remoteClientId);
 
         // Add the ICE candidate received from the client to the peer connection
