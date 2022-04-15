@@ -56,5 +56,4 @@ Kinesis Video Streams、WebRTCの仕組みについて学びたい場合は以�
 
 - [amazon-kinesis-video-streams-webrtc-sdk-js](https://github.com/awslabs/amazon-kinesis-video-streams-webrtc-sdk-js)
 - [mganeko/kvs_webrtc_example](https://github.com/mganeko/kvs_webrtc_example)
-- [Kinesis Video Streams with WebRTC: How It Works](https://docs.aws.amazon.com/ja_jp/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-how-it-works.html
-)
+- [Kinesis Video Streams with WebRTC: How It Works](https://docs.aws.amazon.com/ja_jp/kinesisvideostreams-webrtc-dg/latest/devguide/kvswebrtc-how-it-works.html)
