@@ -187,9 +187,7 @@ export const startViewer = async (params: StartViewerInput) => {
         await viewer.peerConnection.setRemoteDescription(answer);
     });
 
-    // TODO: 型
-    // @ts-ignore
-    viewer.signalingClient.on('iceCandidate', candidate => {
+    viewer.signalingClient.on('iceCandidate', (candidate: string) => {
         // Add the ICE candidate received from the MASTER to the peer connection
         console.log('[VIEWER] Received ICE candidate');
         viewer.peerConnection.addIceCandidate(candidate);
@@ -204,7 +202,6 @@ export const startViewer = async (params: StartViewerInput) => {
     });
 
     // Send any ICE candidates to the other peer
-    // TODO: 型
     // @ts-ignore
     viewer.peerConnection.addEventListener('icecandidate', ({ candidate }) => {
         if (candidate) {
