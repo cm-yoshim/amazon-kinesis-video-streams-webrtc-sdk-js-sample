@@ -71,7 +71,6 @@ export const startViewer = async (params: StartViewerInput) => {
     };
 
     const endpointsByProtocol: { [key: string] : string } = getSignalingChannelEndpointResponse.ResourceEndpointList.reduce((endpoints, endpoint) => {
-        // TODO: チェック
         // @ts-ignore
         endpoints[endpoint.Protocol] = endpoint.ResourceEndpoint;
         return endpoints;    
@@ -135,7 +134,7 @@ export const startViewer = async (params: StartViewerInput) => {
     };
     viewer.peerConnection = new RTCPeerConnection(configuration) as EventTarget;
 
-    // TODO: コメント機能実装時に追加!!
+    // コメント機能実装時に追加!!
     // if (params.openDataChannel) {
     //     viewer.dataChannel = viewer.peerConnection.createDataChannel('kvsDataChannel');
     //     viewer.peerConnection.ondatachannel = event => {
@@ -278,7 +277,7 @@ export const stopViewer = () => {
     }
 }
 
-// TODO: メッセージ送信機能が必要になったら利用する
+// メッセージ送信機能が必要になったら利用する
 // const sendViewerMessage = (message: string) => {
 //     if (viewer.dataChannel) {
 //         try {

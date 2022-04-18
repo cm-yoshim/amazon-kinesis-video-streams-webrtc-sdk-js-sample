@@ -1,7 +1,6 @@
 const REGION =  "ap-northeast-1";
 
-// TODO: Cognitoから取得する
-// https://github.com/aws-samples/amazon-kinesis-video-streams-webrtc-sdk-js-with-amazon-cognito
+// 実際に利用する際は、ベタ書きではなく異なる仕組みを検討すること
 const ACCESS_KEY_ID = '<YOUR_ACCESS_KEY_ID>';
 const SECRET_ACCESS_KEY = '<YOUR_SECRET_ACCESS_KEY>';
 

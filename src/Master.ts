@@ -292,7 +292,7 @@ export const stopMaster = () => {
     }
 }
 
-// TODO: メッセージ送信機能が必要になったら利用する
+// メッセージ送信機能が必要になったら利用する
 // const sendMasterMessage = (message: string) => {
 //     Object.keys(master.dataChannelByClientId).forEach(clientId => {
 //         try {
